@@ -94,8 +94,8 @@
 
         getWeather(zip, apiKey, units) 
         .then((json) => {
-          tempEl.innerHTML = json.main.temp
-          descEl.innerHTML = json.weather[0].description
+          tempEl.innerHTML = json.temp
+          descEl.innerHTML = date.description
         }, 'metric')
       })
            
